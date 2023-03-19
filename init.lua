@@ -1,6 +1,6 @@
 item_description_monoid = fmod.create()
 
-item_description_monoid.monoid = item_monoids.create("description", {
+item_description_monoid.monoid = item_monoids.make_monoid("description", {
 	get_default = function(itemstack)
 		return itemstack:get_definition().description or itemstack:get_name()
 	end,
