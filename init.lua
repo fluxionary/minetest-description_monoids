@@ -33,7 +33,7 @@ description_monoids.description = item_monoids.make_monoid("description", {
 		end
 		prefixes[#prefixes + 1] = default_description
 		table.insert_all(prefixes, suffixes)
-		local first_line = table.concat(prefixes, "")
+		local first_line = table.concat(prefixes, " ")
 		if bgcolor then
 			first_line = bgcolor .. first_line
 		end
@@ -80,7 +80,7 @@ description_monoids.short_description = item_monoids.make_monoid("short_descript
 		end
 		prefixes[#prefixes + 1] = default_short_description
 		table.insert_all(prefixes, suffixes)
-		local short_description = table.concat(prefixes, "")
+		local short_description = table.concat(prefixes, " ")
 		if bgcolor then
 			return bgcolor .. short_description
 		else
