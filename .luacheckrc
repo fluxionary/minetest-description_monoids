@@ -1,4 +1,4 @@
-std = "lua51+luajit+minetest+item_description_monoid"
+std = "lua51+luajit+minetest+description_monoids"
 unused_args = false
 max_line_length = 120
 
@@ -645,9 +645,9 @@ stds.minetest = {
 	}
 }
 
-stds.item_description_monoid = {
+stds.description_monoids = {
 	globals = {
-		"item_description_monoid",
+		"description_monoids",
 	},
 	read_globals = {
 		"fmod",
